@@ -1,11 +1,11 @@
-import React from "react";
-import ShowList from "./ShowList";
-import AddTask from "./AddTask";
+import React, { useState } from "react";
+import AddTask from "./components/AddTaskComponent/AddTask";
 import { Input } from "postcss";
+import DisplayTasks from "./components/DisplayComponent/DisplayTasks";
 const App = () => {
   return (
     <div className="">
-      <AddTask />
+      <DisplayTasks />
     </div>
   );
 };

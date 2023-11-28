@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import axios from "axios";
-import ShowList from "./ShowList";
-import DeleteTask from "./DeleteTask";
+import { data } from "autoprefixer";
+import tasksApi from "../../api/tasksApi";
 
-const AddTask = () => {
+const AddTask = ({ ListTasks, onTaskAdded }) => {
   const [taskName, setTaskName] = useState("");
   const [description, setDescription] = useState("");
-  const [tasks, setTasks] = useState([]);
+  const [listTasks, setListTasks] = useState(ListTasks);
   const handleTaskNameChange = (e) => {
     setTaskName(e.target.value);
   };
@@ -17,31 +17,23 @@ const AddTask = () => {
 
   const handleAddTask = async () => {
     try {
-      const response = await axios.post(
-        "https://localhost:7154/api/toDoList/Add",
-        {
-          taskName: taskName,
-          Description: description,
-          IsCompleted: false,
-        }
-      );
-
+      const params = {
+        taskName: taskName,
+        Description: description,
+        IsCompleted: false,
+      };
+      const response = await tasksApi.add(params);
       console.log("Task added successfully:", response.data);
-      // Cập nhật danh sách công việc ngay sau khi thêm công việc mới
-      setTasks([...tasks, response.data]);
-      // Sau khi thêm công việc, bạn có thể xóa trạng thái hiện tại hoặc làm bất kỳ điều gì khác.
       setTaskName("");
       setDescription("");
-
+      onTaskAdded(response.data);
       // Nếu muốn làm điều gì đó khi công việc được thêm thành công, bạn có thể thêm mã ở đây.
     } catch (error) {
       alert("Error adding task", error);
-
       setTaskName("");
       setDescription("");
     }
   };
-  console.log(taskName);
 
   return (
     <div className="flex flex-col items-center justify-center gap-5 mt-5">
@@ -81,8 +73,6 @@ const AddTask = () => {
           </div>
         </div>
       </div>
-
-      <ShowList onAddTask={tasks} />
     </div>
   );
 };

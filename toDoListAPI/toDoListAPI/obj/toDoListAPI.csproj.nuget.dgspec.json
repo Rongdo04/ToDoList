@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Workspace\\Test\\toDoListAPI\\toDoListAPI\\toDoListAPI.csproj": {}
+    "D:\\Workspace\\Reactjs\\TodoList\\toDoListAPI\\toDoListAPI\\toDoListAPI.csproj": {}
   },
   "projects": {
-    "D:\\Workspace\\Test\\toDoListAPI\\toDoListAPI\\toDoListAPI.csproj": {
+    "D:\\Workspace\\Reactjs\\TodoList\\toDoListAPI\\toDoListAPI\\toDoListAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Workspace\\Test\\toDoListAPI\\toDoListAPI\\toDoListAPI.csproj",
+        "projectUniqueName": "D:\\Workspace\\Reactjs\\TodoList\\toDoListAPI\\toDoListAPI\\toDoListAPI.csproj",
         "projectName": "toDoListAPI",
-        "projectPath": "D:\\Workspace\\Test\\toDoListAPI\\toDoListAPI\\toDoListAPI.csproj",
+        "projectPath": "D:\\Workspace\\Reactjs\\TodoList\\toDoListAPI\\toDoListAPI\\toDoListAPI.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Workspace\\Test\\toDoListAPI\\toDoListAPI\\obj\\",
+        "outputPath": "D:\\Workspace\\Reactjs\\TodoList\\toDoListAPI\\toDoListAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

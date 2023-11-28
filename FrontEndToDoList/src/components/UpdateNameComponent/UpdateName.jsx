@@ -1,8 +1,9 @@
 import React, { useRef, useEffect, useState } from "react";
 import axios from "axios";
 import { EditOutlined, SaveOutlined } from "@ant-design/icons";
+import tasksApi from "../../api/tasksApi";
 
-const UpdateName = ({ taskId, taskName }) => {
+const UpdateName = ({ tasksID, taskName }) => {
   const [name, setName] = useState(taskName);
   const [nameOri, setNameOri] = useState(taskName);
   const [isEditing, setIsEditing] = useState(false);
@@ -12,16 +13,20 @@ const UpdateName = ({ taskId, taskName }) => {
   };
   const handleNameChange = async () => {
     try {
-      const response = await axios.put(
-        "https://localhost:7154/api/toDoList/Edit",
-        {
-          TasksID: taskId,
-          TaskName: name,
-        }
-      );
+      // const response = await axios.put(
+      //   "https://localhost:7154/api/toDoList/Edit",
+      //   {
+      //     TasksID: taskId,
+      //     TaskName: name,
+      //   }
+      // );
+      const params = {
+        TasksID: tasksID,
+        TaskName: name,
+      };
+      const response = await tasksApi.updateName(params);
       console.log(response.data);
       setIsEditing(false);
-
       setName((prev) => {
         return prev;
       });

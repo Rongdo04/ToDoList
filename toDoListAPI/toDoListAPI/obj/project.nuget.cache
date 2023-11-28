@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aQhiS5jdmck16A6mOUITJT9QEZ9yeJNsuyRC4xmyACt8gPEic/6H3rcap75ajV3VrNsEwXLOGHel+m2O9slnyQ==",
+  "dgSpecHash": "PeeH7E5paj02nLCNJu0OItZO3ImTZwdoEhg3azdPiIC5Itbd3n+KWJVHjA0KgSOV7i88RMLn4ern2gW2kzz+MQ==",
   "success": true,
-  "projectFilePath": "D:\\Workspace\\Test\\toDoListAPI\\toDoListAPI\\toDoListAPI.csproj",
+  "projectFilePath": "D:\\Workspace\\Reactjs\\TodoList\\toDoListAPI\\toDoListAPI\\toDoListAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
