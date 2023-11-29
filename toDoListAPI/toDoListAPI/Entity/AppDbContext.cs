@@ -7,7 +7,8 @@ using Microsoft.EntityFrameworkCore;
 namespace toDoListAPI.Entity {
     public class AppDbContext : DbContext {
         public virtual DbSet<Tasks> Tasks { get; set; }
-       
+        public virtual DbSet<User> Users { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
             // Cấu hình kết nối đến cơ sở dữ liệu, ví dụ: SQL Server
             optionsBuilder.UseSqlServer("Server=DESKTOP-KBA58DG\\SQLEXPRESS;Database=toDoListAPI;Trusted_Connection = true;TrustServerCertificate = true");

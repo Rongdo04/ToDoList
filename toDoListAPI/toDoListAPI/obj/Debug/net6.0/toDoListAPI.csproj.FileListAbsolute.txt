@@ -162,3 +162,6 @@ D:\Workspace\Reactjs\TodoList\toDoListAPI\toDoListAPI\obj\Debug\net6.0\refint\to
 D:\Workspace\Reactjs\TodoList\toDoListAPI\toDoListAPI\obj\Debug\net6.0\toDoListAPI.pdb
 D:\Workspace\Reactjs\TodoList\toDoListAPI\toDoListAPI\obj\Debug\net6.0\toDoListAPI.genruntimeconfig.cache
 D:\Workspace\Reactjs\TodoList\toDoListAPI\toDoListAPI\obj\Debug\net6.0\ref\toDoListAPI.dll
+D:\Workspace\Reactjs\TodoList\toDoListAPI\toDoListAPI\bin\Debug\net6.0\toDoListAPI.staticwebassets.runtime.json
+D:\Workspace\Reactjs\TodoList\toDoListAPI\toDoListAPI\bin\Debug\net6.0\BCrypt.Net.dll
+D:\Workspace\Reactjs\TodoList\toDoListAPI\toDoListAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

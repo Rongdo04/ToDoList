@@ -23,5 +23,30 @@ namespace toDoListAPI.Services {
 
             return string.IsNullOrEmpty(key) ? pageResult : pageSearchResult;
         }
+        public int Login(User acc) {
+            if (string.IsNullOrEmpty(acc.username) || string.IsNullOrEmpty(acc.password)) {
+                return 0;
+            }
+
+            var user = dbContext.Users.FirstOrDefault(x => x.username == acc.username);
+
+            if (user == null) {
+                return 0;
+            }
+            try {
+                if (!BCrypt.Net.BCrypt.Verify(acc.password, user.password)) {
+                    return 0;
+                } else {
+                    throw new Exception("");
+                }
+            } catch (Exception ex) {
+                Console.WriteLine(ex.Message);
+            }
+            if(user.username == acc.username && user.password == acc.password) {
+                return 1;
+            }
+            return 0;
+        }
+        
     }
 }
